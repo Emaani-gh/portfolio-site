@@ -22,6 +22,7 @@ const Skills = () => {
               <ul>
                 <li>node Js</li>
                 <li>Express Js</li>
+                <li>Sequelize</li>
               </ul>
             </div>
         </div>

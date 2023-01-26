@@ -41,6 +41,7 @@ const Resume = () => {
                   <ul>
                     <li>node Js</li>
                     <li>Express Js</li>
+                    <li>Sequelize</li>
                   </ul>
                 </div>
 
@@ -48,7 +49,8 @@ const Resume = () => {
                   <h4>Other skills</h4>
                   <ul>
                     <li>Customer service</li>
-                    <li>data labeling</li>
+                    <li>Data Annotation</li>
+                    <li>Phone Verification Specialist</li>
                   </ul>
                 </div>
               </div>

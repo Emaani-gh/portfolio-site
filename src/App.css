@@ -1,0 +1,382 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --pm-col: rgb(8, 194, 132);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #dddad5;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.main-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+}
+.wrap {
+  max-width: 1400px;
+  margin-bottom: 1.5rem;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: white;
+  position: fixed;
+  top: 8vh;
+  max-width: 320px;
+  overflow: auto;
+  height: 100%;
+  text-align: center;
+  box-shadow: 1px 1px 5px grey;
+  z-index: 1;
+  transform: translateX(-100%);
+  transition: 0.5s ease-in;
+}
+.mobile-toggle {
+  transform: translateX(0%);
+}
+
+.profile-pic-container {
+  width: 60%;
+  margin: 1.5rem auto;
+}
+
+.profile-pic-container img {
+  box-shadow: 2px 2px 5px rgb(105, 104, 104);
+}
+
+.profile-info-box {
+  font-family: "Roboto", sans-serif;
+}
+
+.profile-info-box p {
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+
+.sidebar-menu {
+  margin: 2rem 0;
+  border-top: 0.5px solid rgb(199, 197, 197);
+  border-bottom: 0.5px solid rgb(199, 197, 197);
+}
+
+.sidebar-menu ul li {
+  padding: 0.7rem 0;
+  list-style-type: none;
+  font-size: 1rem;
+  border-bottom: 1px solid rgb(199, 197, 197);
+}
+.sidebar-menu ul li a {
+  color: black;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+}
+.social-media a {
+  padding: 0.3rem 0.4rem;
+  background-color: rgb(199, 197, 197);
+}
+.social-media a i {
+  font-size: 18px;
+  color: rgb(124, 124, 124);
+}
+
+.wrapper {
+  background-color: white;
+  position: absolute;
+  top: 8vh;
+  width: 100%;
+  min-height: 100%;
+}
+
+header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  border-bottom: 1px solid rgb(199, 197, 197);
+  z-index: 30;
+}
+.logo-info {
+  margin-left: 2rem;
+  padding: 0 0.5rem;
+}
+.logo-info a {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.hamburger-menu {
+  padding: 0 2.5rem;
+}
+.hamburger-menu i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Index/Home page */
+section {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+.section-name {
+  margin-bottom: 1rem;
+}
+.section-name span {
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--pm-col);
+}
+
+.about-image {
+  max-width: 150px;
+  width: 30%;
+}
+.about-image img {
+  border-radius: 20px 20px;
+}
+.about-box {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-intro {
+  max-width: 500px;
+  padding: 1rem 1rem 0 1rem;
+}
+.about-intro p {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+.cta {
+  background-color: var(--pm-col);
+  padding: 0.5rem 0.8rem;
+  margin-top: 0.6rem;
+  text-align: center;
+  border-radius: 5px;
+}
+.cta a {
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+/*================== Section Services=================== */
+#services {
+  margin-top: 1rem;
+}
+.services-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  flex: 1 200px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+.service-image {
+  width: 15%;
+}
+.service-content {
+  padding: 0.5rem;
+}
+
+/*================================ Section Skills =============================================*/
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.skill {
+  flex: 1 200px;
+  margin-bottom: 1rem;
+  min-height: 25%;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 1px 1px 3px rgb(185, 185, 185);
+  border: 0.3px solid var(--pm-col);
+}
+
+.skill ul {
+  list-style-type: none;
+}
+
+footer {
+  background-color: rgb(229, 226, 226);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 30vh;
+  margin-top: 2rem;
+}
+.contact {
+  margin-bottom: 1rem;
+  line-height: 1.7rem;
+  font-size: 1rem;
+}
+
+.footer-social a {
+  padding: 0 0.7rem;
+  font-size: 1.2rem;
+  color: rgb(102, 100, 100);
+}
+.copy {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+
+/* ========================RESUME============================================ */
+
+
+#resume-container div {
+  margin: 1rem 0;
+}
+
+#resume-container div hr{
+  margin: .3rem 0;
+  border: 1px solid var(--pm-col);
+}
+
+.name{
+  font-weight: 700;
+}
+
+.lastName{
+  color: var(--pm-col);
+}
+
+.address{
+  background-color: var(--pm-col);
+  padding: 1rem .5rem;
+  color: #fff;
+}
+
+.job div,.res-education div{
+  display: flex;
+  justify-content: space-between;
+}
+.job div p,.res-education div p{
+  font-weight: 700;
+  color: var(--pm-col);
+  padding-left: .3rem;
+}
+
+.port{
+  
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-auto-rows: minmax(150px, auto);
+  gap: 1rem;
+}
+.crd{
+  position: relative;
+  box-shadow: 0px 0px 5px rgba(8, 194, 132, .3);
+}
+.over-lay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(8, 194, 132, 0.5);
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.crd:hover .over-lay{
+  opacity: 1;
+}
+
+/*======================== Media Queries====================================== */
+
+@media screen and (min-width: 500px) {
+  .about-box {
+    flex-direction: row;
+    text-align: left;
+  }
+  .about-intro {
+    width: 65%;
+  }
+  .cta {
+    max-width: 180px;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .sidebar {
+    top: 0;
+    transform: translateX(0px);
+  }
+  .wrapper {
+    top: 0;
+    left: 320px;
+    margin-left: 1.5rem;
+    max-width: calc(100% - 1.5rem - 320px);
+  }
+  header {
+    display: none;
+  }
+  .about-box {
+    justify-content: space-between;
+  }
+  .about-image {
+    display: none;
+  }
+  .about-intro {
+    width: 100%;
+  }
+
+}
+
